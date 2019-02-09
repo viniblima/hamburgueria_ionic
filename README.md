@@ -6,3 +6,5 @@ Projeto de automoção de hamburgueria, contendo:
 - Carrinho de compras;
 
 - GET e POST em http;
+
+- Impressao física do pedido.
