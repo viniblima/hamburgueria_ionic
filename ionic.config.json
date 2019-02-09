@@ -1,0 +1,7 @@
+{
+  "name": "carrinho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color = 'primary'>
+    <ion-title>{{opcao.nome}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style = "background-color:	#0A0D14;">
+    <ion-img  width='280' height="50" src = 'http://vservices.com.br/topo_card.png' ></ion-img>
+    <ion-img width='50' height='45' src = 'http://vservices.com.br/cart.jpg' (click)="carrinho()"></ion-img>
+    <br/><br/><br/><br/>
+  <ion-card *ngFor = 'let cardapio of cardapio' style="background-color: #0A0D14">
+    <img src = "{{cardapio.imgurl}}" (click)='seleciona(cardapio)'/>
+    <br/><br/><br/>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color = 'primary'>
+    <ion-title>Pedido #00{{pedido.id}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style = "background-color:	#0A0D14;color: white;">
+  
+  <ion-card style='background-color: #D9B056; color: white;'>
+    <ion-list id="pedidos-list5">
+        <ion-item color="none" id="pedidos-list-item10" style = "background-color:#D9B056" class="item-borderless" *ngFor='let pedidos of pedidos'>  
+          <ion-icon name="restaurant" item-left style ='color:white;'></ion-icon>
+          <h1 style="color: white;">{{pedidos.nome_produto}}</h1>
+          <h1 style="color: white;" *ngIf="pedidos.observacao == 'Brioche' ">Pão: Brioche</h1>
+          <h1 style="color: white;" *ngIf="pedidos.observacao == 'Australiano' ">Pão: Australiano</h1>
+          
+        </ion-item>
+    </ion-list>  
+  </ion-card>
+
+    <br/><br/>
+    <br/>
+<button id="login-button1" (click)="alertPrint()" ion-button color="light" block>
+      Imprimir
+    </button>
+</ion-content>

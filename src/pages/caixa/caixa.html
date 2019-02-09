@@ -1,0 +1,28 @@
+
+<ion-content padding style = "background-color:	#0A0D14;">
+  <br/><br/><br/><br/>
+  <img src = 'http://vservices.com.br/topo_card.png' (click)='opcoes()'class='topo'/>
+  <form id="login-form1">
+    <ion-list id="login-list2" padding>
+      <ion-item>
+        <ion-label color='primary'>
+          Email:
+        </ion-label>
+        <ion-input type="email" [(ngModel)] = "usuario.email" name = "email" color='primary'></ion-input>
+      </ion-item>
+      <br/><br/>
+      <ion-item>
+        <ion-label color='primary'>
+          Senha:
+        </ion-label>
+        <ion-input type="password" [(ngModel)] = "usuario.password" name = "senha" color='primary'></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="height:40px;" id="login-spacer1" padding>
+    <button id="login-button1" (click)="check()" ion-button color="light" block>
+      Login
+    </button>
+    
+  </div>
+  </form>
+</ion-content>

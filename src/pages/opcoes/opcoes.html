@@ -1,0 +1,13 @@
+
+
+<ion-content padding style = "background-color:	#0A0D14;">
+  <img src = 'http://vservices.com.br/topo_card.png' (click)='caixa()' class='topo'/>
+  <ion-img width='50' height='45' style='position: absolute; left:80%;top:8%;' src = 'http://vservices.com.br/cart.jpg' (click)="carrinho()"></ion-img>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  
+  <ion-card *ngFor = 'let opcao of opcao' style='background-color: #0A0D14'>
+    <img src = "{{opcao.imgurl}}" (click) = "seleciona(opcao)"/>
+    <br/><br/><br/>
+  </ion-card>
+  
+</ion-content>
